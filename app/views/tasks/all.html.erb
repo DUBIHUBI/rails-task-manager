@@ -1,0 +1,6 @@
+<h1>hello</h1>
+
+<% @tasks.each do |task| %>
+<%= link_to "#{task.title}", "/tasks/#{task.id}" %>
+<br>
+<% end %>

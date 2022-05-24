@@ -1,0 +1,8 @@
+<%= @tasks.details %>
+<hr>
+<%= link_to "Delete",
+  task_path(@tasks),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
+
+<%= link_to "Go back to all tasks", "/tasks" %>
